@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cobangark">
+    <link rel="stylesheet" href="../owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../owlcarousel/assets/owl.carousel.min.css">
+    <link href="../tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cobangark</title>
+</head>
+
+<body>
+    <div class="body relative 2xl:container min-h-screen mx-auto flex items-stretch">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle hidden">
+        <aside
+            class="aside lg:relative absolute top-0 left-0 right-0 bottom-0 z-50 w-full lg:w-3/12 xl:w-1/5 hidden lg:inline-flex text-white">
+            <div class="h-full w-full">
+                <ul class="navlink-contain h-full w-full py-5">
+                    <li class="nav-li w-full px-8 my-8 max-w-xs">
+                        <a href="" class="navlinks logo flex w-full">
+                            <img src="../assets/images/Group 305.png" class="navlink-img w-full" alt="Logo">
+                        </a>
+                    </li>
+                    <li class="nav-li px-8 my-8 py-1 text-white text-opacity-80 hover:text-opacity-100">
+                        <a href="../dashboard/index.html" class="navlinks flex items-center">
+                            <img src="../assets/images/dashboard.png" class="navlink-img w-5 nav-light"
+                                alt="Dashboard icon">
+                            <img src="../assets/images/dashboard@2x.png" class="navlink-img w-5 nav-bold hidden"
+                                alt="Dashboard icon">
+                            <span class="navlink-title px-2">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-li px-8 my-8 text-white text-opacity-80 hover:text-opacity-100">
+                        <a href="../profile/index.html" class="navlinks flex items-center">
+                            <img src="../assets/images/Profile Icons b.png" class="navlink-img w-5 nav-bold hidden"
+                                alt="Profile icon">
+                            <img src="../assets/images/Profile Icons.png" class="navlink-img w-5 nav-light"
+                                alt="Profile icon">
+                            <span class="navlink-title px-2">Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-li px-8 my-8 text-white text-opacity-80 hover:text-opacity-100">
+                        <a href="../plan/index.html" class="navlinks flex items-center">
+                            <img src="../assets/images/Plan icon.png" class="navlink-img w-5 nav-light" alt="Plan icon">
+                            <img src="../assets/images/Plan icon b.png" class="navlink-img w-5 nav-bold hidden"
+                                alt="Plan icon">
+                            <span class="navlink-title px-2">My Plan</span>
+                        </a>
+                    </li>
+                    <li class="nav-li navlink-active px-8 my-8 text-white">
+                        <a href="../courses/index.html" class="navlinks flex items-center">
+                            <img src="../assets/images/Video.png" class="navlink-img w-5 nav-light" alt="Course icon">
+                            <img src="../assets/images/Video b.png" class="navlink-img w-5 nav-bold hidden"
+                                alt="Course icon">
+                            <!-- <img src="./assets/images/c" class="navlink-img" alt="Course icon"> -->
+                            <span class="navlink-title px-2">My Courses</span>
+                        </a>
+                    </li>
+                    <li class="nav-li px-8 my-8 text-white text-opacity-80 hover:text-opacity-100">
+                        <a href="../rewards/index.html" class="navlinks flex items-center">
+                            <img src="../assets/images/Haruki Icons.png" class="navlink-img w-5 nav-light"
+                                alt="Reward icon">
+                            <img src="../assets/images/rewards b.png" class="navlink-img w-5 nav-bold hidden"
+                                alt="Reward icon">
+                            <span class="navlink-title px-2">Rewards</span>
+                        </a>
+                    </li>
+                    <li class="nav-li px-8 my-8 text-white text-opacity-80 hover:text-opacity-100">
+                        <label class="navlinks flex items-center cursor-pointer" for="trans-dropcheck">
+                            <img src="../assets/images/Statistic.png" class="navlink-img w-5 nav-light"
+                                alt="Transaction icon">
+                            <img src="../assets/images/Statistic b.png" class="navlink-img w-5 nav-bold hidden"
+                                alt="Transaction icon">
+                            <span class="navlink-title px-2">Transaction</span>
+                            <button>
+                                <img src="../assets/images/arrow right.png" class="nav-light" alt="dropdown icon">
+                                <img src="../assets/images/arrow right (1).png" class="nav-bold hidden"
+                                    alt="dropdown icon">
+                            </button>
+                        </label>
+                        <input type="checkbox" id="trans-dropcheck" class="hidden trans-dropcheck">
+                        <ul class="ml-7 hidden trans-dropdown">
+                            <li class="trans-droplink text-gray-100 hover:text-white">
+                                <a href="../transaction/index.html"
+                                    class="text-white text-opacity-80 hover:text-opacity-100 mt-3.5">Transaction
+                                    History</a>
+                            </li>
+                            <li class="trans-droplink text-gray-100 hover:text-white">
+                                <a href="../withdrawals/index.html"
+                                    class="text-white text-opacity-80 hover:text-opacity-100 mt-3.5">Withdrawals</a>
+                            </li>
+                            <li class="trans-droplink text-gray-100 hover:text-white">
+                                <a href="../transfer funds/index.html"
+                                    class="text-white text-opacity-80 hover:text-opacity-100 mt-3.5">Transfer Funds</a>
+                            </li>
+                            <li class="trans-droplink text-gray-100 hover:text-white">
+                                <a href="../account/index.html"
+                                    class="text-white text-opacity-80 hover:text-opacity-100 mt-3.5">Add Account</a>
+                            </li>
+                            <li class="trans-droplink">
+                                <a href="../transactionpin/index.html"
+                                    class="text-white text-opacity-80 hover:text-opacity-100 mt-3.5">Set Transaction
+                                    Pin</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li
+                        class="nav-li px-8 my-8 text-white text-opacity-80 hover:text-opacity-100 text-white text-opacity-80 hover:text-opacity-100">
+                        <a href="../settings/index.html" class="navlinks flex items-center">
+                            <img src="../assets/images/settings icon.png" class="navlink-img nav-light w-5"
+                                alt="Settings icon">
+                            <img src="../assets/images/settings icon b.png" class="navlink-img nav-bold hidden w-5"
+                                alt="Settings icon">
+                            <span class="navlink-title px-2">Settings</span>
+                        </a>
+                    </li>
+                    <li
+                        class="nav-li px-8 my-8 text-white text-opacity-80 hover:text-opacity-100 text-white text-opacity-80 hover:text-opacity-100">
+                        <a href="" class="navlinks flex items-center">
+                            <img src="../assets/images/logout Icons.png" class="navlink-img w-5" alt="Logout icon">
+                            <span class="navlink-title px-2">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="w-full lg:w-9/12 xl:w-4/5 page-body">
+            <div class="w-full h-full py-10 px-8">
+                <nav>
+                    <div class="flex items-center relative justify-between lg:justify-end w-full">
+                        <div class="menu-contain lg:hidden" id="menu-contain">
+                            <label for="nav-toggle">
+                                <img src="../assets/images/u_bars.png" class="w-6" alt="search icon">
+                            </label>
+                        </div>
+                        <div class="logo-contain lg:hidden" id="logo-contain">
+                            <a>
+                                <img src="../assets/images/logo.png" class="w-32" alt="logo">
+                            </a>
+                        </div>
+                        <div class="search-contain" id="search-contain">
+                            <div class="flex items-center">
+                                <button aria-label="search button" class="search-btn" id="search-btn">
+                                    <img src="../assets/images/search@2x.png" class="w-6" alt="search icon">
+                                </button>
+                                <div class="flex items-center hidden w-full toggle-hide" id="toggle-hide">
+                                    <input type="text" class="w-full px-2 bg-transparent outline-none"
+                                        id="search-input">
+                                    <button class="" aria-label="cancel search" id="cancel-search">
+                                        <img src="../assets/images/close.png" class="w-3" alt="cancel icon">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notification-contain relative flex items-center hidden lg:inline-block">
+                            <button class="flex relative items-center" id="notification-btn">
+                                <img src="../assets/images/notification@2x.png" class="w-6 mx-4"
+                                    alt="notification bell">
+                            </button>
+                            <div class="hidden absolute top-full right-0 w-60 z-50 bg-white rounded-lg shadow-md"
+                                id="notification-container">
+                                <div class="notification-card">
+                                    <ul class="notification-list divide-gray-200 divide-y" id="notification-list">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-contain hidden flex items-center lg:inline-block">
+                            <a href="../profile/index.html" class="flex items-center">
+                                <img src="../assets/images/avatar@2x.png" class="w-12" alt="profile image">
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <main id="main" class="py-4">
+                    <div>
+                        <div class="flex gap-3 items-start">
+                            <a href="../courses/index.html" class="back-link py-3">
+                                <img src="../assets/images/Arrow 1 (Stroke).png" alt="back image">
+                            </a>
+                            <h2 class="page-title text-lg md:text-2xl font-bold" id="course-title">My Courses</h2>
+                        </div>
+                        <div class="main-body mt-4 flex gap-4">
+                            <div class="course-body w-2/3 flex-auto">
+                                <section>
+                                    <div
+                                        class="card flex-none flex justify-center text-white items-center w-full h-72 bg-secondary rounded-2xl">
+                                        <div class="card-body lesson-card-body relative p-2" id="lesson-card-body">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card overflow-hidden hidden flex-none flex justify-center text-white items-center w-full h-72 bg-secondary rounded-2xl">
+                                        <div class="card-body w-full h-full lesson-card-body relative">
+                                            <div class="video-container w-full h-full relative">
+                                                <div class="video-body w-full h-full relative">
+                                                    <video controls class="video w-full h-full" id="video" preload="metadata"
+                                                        poster="../assets/images/Cover image.png">
+                                                        <source src="../assets/images/video.mp4" type="video/mp4">
+                                                        </source>
+                                                    </video>
+                                                </div>
+                                                <div
+                                                    class="video-controls-container hidden absolute top-0 left-0 w-full h-full" id="video-controls-container">
+                                                    <div
+                                                    class="video-controls">
+                                                    <div class="relative">
+                                                        <div class="video-progress">
+                                                            <progress id="progress-bar" value="0" min="0"></progress>
+                                                            <input class="seek" id="seek" value="0" min="0" type="range"
+                                                                step="1">
+                                                            <div class="seek-tooltip" id="seek-tooltip">00:00</div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                    class="items-end flex justify-between">
+                                                        <div class="flex items-center controls-left">
+                                                            <div class="play-control">
+                                                                <button class="btn" id="play-btn" data-title="Play (k)">
+                                                                    <div class="play">
+                                                                        <img src="../assets/images/videoactive-sm.png"
+                                                                            class="w-5" alt="">
+                                                                    </div>
+                                                                    <div class="pause hidden">
+                                                                        <img src="../assets/images/play.png" class="w-5"
+                                                                            alt="">
+                                                                    </div>
+                                                                </button>
+                                                                <!-- <button class="btn hidden" data-title="Pause (k)" id="pause-btn">
+                                                                <img src="../assets/images/play.png" class="w-5" alt="">
+                                                            </button> -->
+                                                            </div>
+                                                            <div class="backward-control">
+                                                                <button class="btn" id="backward-btn"
+                                                                    data-title="-10 seconds">
+                                                                    <img src="../assets/images/move-left.png"
+                                                                        class="w-5" alt="">
+                                                                </button>
+                                                            </div>
+                                                            <div class="speed-control">
+                                                                <!-- <button class="btn"> -->
+                                                                <select
+                                                                    class="bg-white select-speed border-0 inline-block rounded-md px-1 text-sm font-medium color-dark"
+                                                                    id="select-speed">
+                                                                    <option value="0.25" class="text-tertiary">0.25x
+                                                                    </option>
+                                                                    <option value="0.50" class="text-tertiary">0.50x
+                                                                    </option>
+                                                                    <option value="0.75" class="text-tertiary">0.75x
+                                                                    </option>
+                                                                    <option value="1.00" class="text-tertiary">1.00x
+                                                                    </option>
+                                                                    <option value="1.25" class="text-tertiary">1.25x
+                                                                    </option>
+                                                                    <option value="1.50" class="text-tertiary">1.50x
+                                                                    </option>
+                                                                    <option value="1.75" class="text-tertiary">1.75x
+                                                                    </option>
+                                                                    <option value="2.00" class="text-tertiary">2.00x
+                                                                    </option>
+                                                                </select>
+                                                                <!-- </button> -->
+                                                            </div>
+                                                            <div class="forward-control" id="forward-btn"
+                                                                data-title="+10">
+                                                                <button class="btn">
+                                                                    <img src="../assets/images/move-right.png"
+                                                                        class="w-5" alt="">
+                                                                </button>
+                                                            </div>
+                                                            <div class="time tracking-wider text-xs font-light">
+                                                                <time id="time-elapsed">00 : 00</time>
+                                                                <span> / </span>
+                                                                <time id="duration">00 : 00</time>
+                                                            </div>
+                                                            <div class="bookmark-control">
+                                                                <button class="btn" id="bookmark-btn">
+                                                                    <img src="../assets/images/bookmark.png" class="w-5"
+                                                                        alt="">
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex items-center controls-right">
+                                                            <div class="play-control">
+                                                                <button class="btn" id="mute-btn" data-title="Play (k)">
+                                                                    <img src="../assets/images/volume.png" class="w-5"
+                                                                        alt="">
+                                                                </button>
+                                                            </div>
+                                                            <div class="play-control">
+                                                                <button class="btn" data-title="Play (k)">
+                                                                    <img src="../assets/images/paper.png" class="w-5"
+                                                                        alt="">
+                                                                </button>
+                                                            </div>
+                                                            <div class="speed-control">
+                                                                <!-- <button class="btn"> -->
+                                                                <select
+                                                                    class="bg-white select-speed inline-block border-0 rounded-md px-1 text-sm font-medium color-dark"
+                                                                    id="select-speed">
+                                                                    <option value="cc" class="text-tertiary">cc</option>
+                                                                </select>
+                                                                <!-- </button> -->
+                                                            </div>
+                                                            <div class="setting-control">
+                                                                <button class="btn" id="video-setting-btn">
+                                                                    <img src="../assets/images/setting.png" class="w-5"
+                                                                        alt="">
+                                                                </button>
+                                                            </div>
+                                                            <div class="fullsize-control">
+                                                                <button class="btn" id="fullsize-btn"
+                                                                    data-title="-10 seconds">
+                                                                    <img src="../assets/images/fullsize.png" class="w-5"
+                                                                        alt="">
+                                                                </button>
+                                                            </div>
+                                                            <div class="width-control">
+                                                                <button class="btn" id="video-width-btn">
+                                                                    <img src="../assets/images/width.png" class="w-5"
+                                                                        alt="">
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex w-full items-center justify-between my-4">
+                                        <button class="flex items-center gap-1" id="prev-btn" disabled>
+                                            <img src="../assets/images/back.png" alt="previous image">
+                                            <span class="color-secondary">Previous</span>
+                                        </button>
+                                        <button class="flex items-center gap-1" id="next-btn">
+                                            <span class="color-secondary">Next</span>
+                                            <img src="../assets/images/next.png" alt="next image">
+                                        </button>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="w-full md:hidden">
+                                        <div class="overview-header" id="overview-header">
+                                            <div class="flex items-center gap-5">
+                                                <div class="instructor-img-contain relative w-20 h-20 p-1">
+                                                    <img src="" alt="instructor image" class="instructor-img">
+                                                </div>
+                                                <div class="details">
+                                                    <h3 class="section-title font-bold text-3xl text-dark"
+                                                        id="section-title"></h3>
+                                                    <p class="instructor-name text-light"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs-container relative z-20 w-full">
+                                            <div class="flex w-full gap-5 relative items-center">
+                                                <label for="overview-sm"
+                                                    class="tab h-full relative cursor-pointer border-b-2 border-transparent tab-active inline-block font-medium text-sm color-primary py-2">
+                                                    Overview
+                                                </label>
+                                                <label for="lessons-tab"
+                                                    class="tab h-full relative cursor-pointer border-b-2 border-transparent inline-block font-medium text-sm text-gray-600 py-2">
+                                                    Lessons
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="tab-section-container">
+                                            <input type="radio" name="settings-sm-tab" id="overview-sm"
+                                                class="radio-tab hidden" checked>
+                                            <section class="tab-section w-full hidden py-10">
+                                                <div class="section-body">
+                                                    <div class="overview-container" id="overview-container"></div>
+                                                </div>
+                                            </section>
+                                            <input type="radio" name="settings-sm-tab" id="lessons-tab"
+                                                class="radio-tab hidden">
+                                            <section class="tab-section w-full hidden py-10">
+                                                <div class="">
+                                                    <ul class="lessons-container" id="lessons-container">
+                                                    </ul>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="w-full hidden md:block">
+                                        <div class="tabs-container relative z-20 w-full">
+                                            <div class="flex w-full gap-5 relative items-center">
+                                                <label for="overview"
+                                                    class="tab h-full relative cursor-pointer border-b-2 border-transparent tab-active inline-block font-medium text-sm color-primary py-2">
+                                                    Overview
+                                                </label>
+                                                <label for="materials"
+                                                    class="tab h-full relative cursor-pointer border-b-2 border-transparent inline-block font-medium text-sm text-gray-600 py-2">
+                                                    Materials Needed
+                                                </label>
+                                                <label for="instructor"
+                                                    class="tab h-full relative cursor-pointer border-b-2 border-transparent inline-block font-medium text-sm text-gray-600 py-2">
+                                                    instructor
+                                                </label>
+                                                <label for="reviews"
+                                                    class="tab h-full relative cursor-pointer border-b-2 border-transparent inline-block font-medium text-sm text-gray-600 py-2">
+                                                    Reviews
+                                                </label>
+                                                <label for="faq"
+                                                    class="tab h-full relative cursor-pointer border-b-2 border-transparent inline-block font-medium text-sm text-gray-600 py-2">
+                                                    FAQ
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="tab-section-container">
+                                            <input type="radio" name="settings-tab" id="overview"
+                                                class="radio-tab hidden" checked>
+                                            <section class="tab-section w-full hidden py-10">
+                                                <div class="section-body">
+                                                    <div class="overview-header" id="overview-header">
+                                                        <div class="flex items-center gap-5">
+                                                            <div class="instructor-img-contain relative w-20 h-20 p-1">
+                                                                <img src="" alt="instructor image"
+                                                                    class="instructor-img">
+                                                            </div>
+                                                            <div class="details">
+                                                                <h3 class="section-title font-bold text-3xl text-dark"
+                                                                    id="section-title"></h3>
+                                                                <p class="instructor-name text-light"></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="overview-container" id="overview-container"></div>
+                                                </div>
+                                            </section>
+                                            <input type="radio" name="settings-tab" id="materials"
+                                                class="radio-tab hidden">
+                                            <section class="tab-section w-full hidden py-10">
+                                                <div class="">
+                                                    <h2 class="font-medium">
+                                                        Here are all the necessary materials needed for this course
+                                                    </h2>
+                                                </div>
+                                            </section>
+                                            <input type="radio" name="settings-tab" id="instructor"
+                                                class="radio-tab hidden">
+                                            <section class="tab-section w-full hidden py-10">
+                                                <div class="w-full sm:w-1/2">
+                                                    <div class="flex gap-5">
+                                                        <div class="instructor-img-contain relative w-20 h-20 p-1">
+                                                            <img src="" alt="instructor image" class="instructor-img">
+                                                        </div>
+                                                        <div class="details">
+                                                            <p class="instructor-name text-light"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <input type="radio" name="settings-tab" id="reviews"
+                                                class="radio-tab hidden">
+                                            <section class="tab-section w-full hidden py-10">
+                                                <h2 class="font-medium">What other students have to say</h2>
+                                            </section>
+                                            <input type="radio" name="settings-tab" id="faq" class="radio-tab hidden">
+                                            <section class="tab-section w-full hidden py-10">
+                                                <h2 class="font-medium">Frequently Asked Questions</h2>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="course-headlines w-1/3 hidden md:block flex-auto">
+                                <div class="px-2">
+                                    <h2 class="w-full text-lg font-medium border-b-2 border-secondary leading-loose">
+                                        Lessons
+                                    </h2>
+                                </div>
+                                <div class="">
+                                    <div class="">
+                                        <ul class="lessons-container" id="lessons-container-md">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
